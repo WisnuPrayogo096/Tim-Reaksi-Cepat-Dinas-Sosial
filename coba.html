@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CKEditor 5 Example</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.0.0/classic/ckeditor.js"></script>
+  </head>
+  <body>
+    <textarea id="editor"></textarea>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        ClassicEditor.create(document.querySelector("#editor"), {
+          toolbar: {
+            items: [
+              "heading",
+              "|",
+              "bold",
+              "italic",
+              "link",
+              "bulletedList",
+              "numberedList",
+              "blockQuote",
+              "undo",
+              "redo",
+            ],
+          },
+          language: "en",
+          // Konfigurasi tambahan lainnya
+        }).catch((error) => {
+          console.error(error);
+        });
+      });
+    </script>
+  </body>
+</html>

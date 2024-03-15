@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3e3e3e;
+  color: #3e3e3e;
+}
+
+.admin {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  position: relative;
+}
+
+.admin-content {
+  border-radius: 50px;
+  width: 100%;
+  margin: 25px 30px 30px 30px;
+}
+
+.admin-content-header {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  margin-bottom: 20px;
+  outline: none;
+  padding: 10px;
+  border: 0;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.15s;
+
+  &:focus {
+    box-shadow: 0 0 0 3px #ffab00;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+/* Reset some default styles for the button */
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Style for the login button */
+.form-button {
+  background-color: #ffffff; /* White background */
+  border: 5px solid #ffab00; /* Orange outline */
+  color: #3e3e3e; /* Black text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow */
+  padding: 5px 25px; /* Adjust padding as needed */
+  font-family: "Open Sans", sans-serif; /* Font family */
+  font-size: 14px; /* Font size */
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition effect */
+
+  /* Additional styles for when the button is hovered */
+  &:hover {
+    background-color: #ffab00; /* Orange background on hover */
+    color: #ffffff; /* White text on hover */
+    font-weight: 600;
+    /* border-color: #ffffff; White border on hover */
+  }
+}

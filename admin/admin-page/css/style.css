@@ -1,0 +1,17 @@
+#temperature-container {
+  font-size: 20px;
+}
+
+/* Menyesuaikan lebar kolom pertama */
+th:first-child,
+td:first-child {
+  width: 65px; /* Sesuaikan dengan lebar yang diinginkan */
+}
+
+/* Menyesuaikan lebar kolom judul, deskripsi, dan isi artikel */
+td.ellipsis {
+  max-width: 20px; /* Sesuaikan dengan lebar yang diinginkan */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
